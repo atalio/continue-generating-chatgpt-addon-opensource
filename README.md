@@ -1,4 +1,4 @@
-# Continue Generating Auto-Clicker for ChatGPT
+# Firefox: Continue Generating Auto-Clicker for ChatGPT
 
 [![Mozilla Add-Ons](https://img.shields.io/amo/v/continuegenerating-chatgpt)](https://addons.mozilla.org/es/firefox/addon/continuegenerating-chatgpt/)
 [![Mozilla Add-Ons](https://img.shields.io/amo/stars/continuegenerating-chatgpt)](https://addons.mozilla.org/es/firefox/addon/continuegenerating-chatgpt/)
