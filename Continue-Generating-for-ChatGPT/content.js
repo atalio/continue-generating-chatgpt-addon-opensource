@@ -1,4 +1,4 @@
-/* Version: 2.3 |
+/* Version: 2.4 |
 -----------------
 Author: @criskkky
 Website: https://criskkky.carrd.co/
@@ -62,7 +62,7 @@ Please rate 5 stars if it's useful <3
       mutations.forEach((mutation) => {
         if (mutation.addedNodes && mutation.addedNodes.length > 0) {
           mutation.addedNodes.forEach((node) => {
-            if (node.nodeType === Node.ELEMENT_NODE && node.innerText.includes("Continue generating")) {
+            if (node.nodeType === Node.ELEMENT_NODE && node.tagName.toLowerCase() === "button" && node.innerText.includes("Continue generating")) {
               node.click();
               if (startUp) {
                 showNotification();
