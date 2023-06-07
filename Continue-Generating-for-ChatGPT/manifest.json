@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Continue Generating Auto-Clicker for ChatGPT",
-  "version": "2.4",
+  "version": "2.4.1",
   "description": "Enhance your ChatGPT experience with automated 'Continue generating' button click.",
   "permissions": [
     "https://chat.openai.com/*"

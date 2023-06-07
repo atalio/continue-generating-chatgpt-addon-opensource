@@ -1,8 +1,8 @@
-/* Version: 2.4 |
+/* Version: 2.4.1 |
 -----------------
 Author: @criskkky
 Website: https://criskkky.carrd.co/
-Extension URL: https://addons.mozilla.org/es/firefox/addon/continuegenerating-chatgpt/
+Extension URL: https://addons.mozilla.org/en-US/firefox/addon/continuegenerating-chatgpt/
 
 Please rate 5 stars if it's useful <3
 */
@@ -19,7 +19,7 @@ Please rate 5 stars if it's useful <3
     const icon = document.createElement("img");
     icon.src = iconURL;
     icon.style.cssText = "width: 30px; height: 30px";
-    iconLink.href = "https://addons.mozilla.org/es/firefox/addon/continuegenerating-chatgpt/";
+    iconLink.href = "https://addons.mozilla.org/en-US/firefox/addon/continuegenerating-chatgpt/";
     iconLink.target = "_blank";
     iconLink.title = "Continue Generating Auto-Clicker";
     iconLink.appendChild(icon);
