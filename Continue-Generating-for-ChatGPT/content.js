@@ -57,24 +57,30 @@ Please rate 5 stars if it's useful <3
     }, 2000);
   }
 
-  function clickContinueButton() {
-    const observer = new MutationObserver((mutations) => {
-      mutations.forEach((mutation) => {
-        if (mutation.addedNodes && mutation.addedNodes.length > 0) {
-          mutation.addedNodes.forEach((node) => {
-            if (node.nodeType === Node.ELEMENT_NODE && node.tagName.toLowerCase() === "button" && node.innerText.includes("Continue generating")) {
-              node.click();
-              if (startUp) {
-                showNotification();
-              }
+function clickContinueButton() {
+  const observer = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+      if (mutation.addedNodes && mutation.addedNodes.length > 0) {
+        mutation.addedNodes.forEach((node) => {
+          if (
+            node.nodeType === Node.ELEMENT_NODE &&
+            node.tagName.toLowerCase() === "button" &&
+            node.innerText.includes("Continue generating") &&
+            !node.innerText.includes("Re-generate")
+          ) {
+            node.click();
+            if (startUp) {
+              showNotification();
             }
-          });
-        }
-      });
+          }
+        });
+      }
     });
+  });
 
-    observer.observe(document.body, { childList: true, subtree: true });
-  }
+  observer.observe(document.body, { childList: true, subtree: true });
+}
+
 
   if (startUp) {
     showNotification();
